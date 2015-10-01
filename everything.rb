@@ -1,11 +1,20 @@
+require "formula"
+
+# Homebrew formula to depend on every standard tool we use.
 class Everything < Formula
-  desc "Install all dependencies for all workstation profiles."
-  homepage "http://Renzu.co/"
-  # Dummy URL to make Homebrew happy:
-  url "https://raw.githubusercontent.com/renzuinc/homebrew-workstation/master/README.md"
-  # sha256 "786b0de0875053bf61b5531a86ae8119e320edab724fc62fe2150cc931f11037"
+  # desc "Install all dependencies for all workstation profiles."
+  # homepage "http://Renzu.co/"
+  # # Dummy URL to make Homebrew happy:
+  # url "https://raw.githubusercontent.com/renzuinc/homebrew-workstation/master/README.md"
+  # # sha256 "786b0de0875053bf61b5531a86ae8119e320edab724fc62fe2150cc931f11037"
 
   # depends_on "pkg-config" => :build
+  # => :optional
+  # => :recommended
+  # depends_on :x11 => :optional
+  # "A Symbol specifies a special conditional dependency, such as X11."
+
+  # conflicts_with "blueduck", :because => "yellowduck also ships a duck binary"
 
   # Common:
   depends_on "git"
@@ -55,14 +64,20 @@ class Everything < Formula
   # TODO:     * awscli
   # TODO:     * awsebcli
 
-  def install
-    # TODO: Validate workstation here?
-    # TODO: * /usr/local/bin appears before /usr/bin in path.
-    # TODO: * RVM is set to load from relevant rc files.
-    # TODO: * Various tools tools are accessible from path:
-    # TODO:     * aws
-    # TODO:     * eb
-    # TODO:     * gpg
-    # TODO: * Permissions are sane on /usr/local/bin, /usr/local/share, etc.
-  end
+  # def install
+  #   # TODO: Validate workstation here?
+  #   # TODO: * /usr/local/bin appears before /usr/bin in path.
+  #   # TODO: * RVM is set to load from relevant rc files.
+  #   # TODO: * Various tools tools are accessible from path:
+  #   # TODO:     * aws
+  #   # TODO:     * eb
+  #   # TODO:     * gpg
+  #   # TODO: * Permissions are sane on /usr/local/bin, /usr/local/share, etc.
+  # end
+
+  # def caveats
+  #   <<-EOS.undent
+  #     Lorem ipsum dolor sit amet...
+  #   EOS
+  # end
 end
