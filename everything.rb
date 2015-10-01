@@ -1,7 +1,8 @@
 class Everything < Formula
   desc "Install all dependencies for all workstation profiles."
   homepage "http://Renzu.co/"
-  # url "http://www.libimobiledevice.org/downloads/libimobiledevice-1.2.0.tar.bz2"
+  # Dummy URL to make Homebrew happy:
+  url "https://raw.githubusercontent.com/renzuinc/homebrew-workstation/master/README.md"
   # sha256 "786b0de0875053bf61b5531a86ae8119e320edab724fc62fe2150cc931f11037"
 
   # depends_on "pkg-config" => :build
