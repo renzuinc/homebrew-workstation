@@ -5,7 +5,7 @@ cask :v1 => "everything" do
   name "Everything"
   license :gpl
 
-  conflicts_with "boot2docker", because: "deprecated, we install Docker Toolbox instead"
+  # conflicts_with "boot2docker", because: "deprecated, we install Docker Toolbox instead"
 
   # Common:
   depends_on formula: "git"
