@@ -48,7 +48,7 @@ cask :v1 => "everything" do
   depends_on cask: "charles"
   depends_on cask: "tunnelblick"
   depends_on cask: "java"
-  depends_on cask: "microsoft-office-365"
+  depends_on cask: "microsoft-office365"
   # https://github.com/caskroom/homebrew-cask/blob/master/doc/CASK_LANGUAGE_REFERENCE.md#depends_on-stanza-details
   # https://github.com/Homebrew/homebrew/issues/15919
   # https://github.com/Homebrew/homebrew/issues/12130
