@@ -1,5 +1,5 @@
 cask :v1 => "everything" do
-  version :latest
+  version "0.1.1"
   sha256 :no_check
 
   name "Everything"
