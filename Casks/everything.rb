@@ -33,15 +33,15 @@ cask :v1 => "everything" do
   depends_on formula: "jq"
   depends_on formula: "python"
 
-  # `cnc-renbot`:
+  # Renbot:
   #   Common:
   depends_on formula: "redis"
-  #   DevOps -- Cert management:
+  #   Cert Management:
   depends_on formula: "strongswan"
+
   # TODO: Break this up into various profiles and have `everything` depend on those.
 
-  # TODO: Cask deps?
-  # https://github.com/thehunmonkgroup/homebrew-bumptop/blob/master/Casks/bumptop.rb
+  # TODO: Better handling of cases where people already installed some of these things.
   depends_on cask: "dockertoolbox"
   depends_on cask: "intellij-idea-ce"
   depends_on cask: "launchrocket"
