@@ -1,8 +1,8 @@
-cask :v1 => "everything" do
+cask "everything" do
   version "0.1.1"
   sha256 :no_check
 
-  name "Everything"
+  name "everything"
   license :gpl
 
   # conflicts_with "boot2docker", because: "deprecated, we install Docker Toolbox instead"
